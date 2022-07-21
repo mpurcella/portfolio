@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Navbar from './containers/navbar/Navbar';
+import Home from './components/pages/Home';
+import Footer from './components/footer/Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	const heroRef = useRef(null);
+	const aboutRef = useRef(null);
+	const technologiesRef = useRef(null);
+	const workRef = useRef(null);
+	const contactRef = useRef(null);
+
+	return (
+		<div className='app'>
+			<Router>
+				<Navbar
+					heroRef={heroRef}
+					aboutRef={aboutRef}
+					technologiesRef={technologiesRef}
+					workRef={workRef}
+					contactRef={contactRef}
+				/>
+				<Home
+					heroRef={heroRef}
+					aboutRef={aboutRef}
+					technologiesRef={technologiesRef}
+					workRef={workRef}
+					contactRef={contactRef}
+				/>
+			</Router>
+			<Footer />
+		</div>
+	);
+};
 
 export default App;

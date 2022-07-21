@@ -1,0 +1,57 @@
+@import '../../design-tokens/fonts';
+@import '../../design-tokens/scss-variables';
+
+.navbar-links-list {
+	margin-bottom: $spacer-6 * 4;
+
+	.navbar-links-item {
+		display: flex;
+		justify-content: center;
+		margin: $spacer-7 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (min-width: 992px) {
+			margin: $spacer-6 0;
+		}
+	}
+
+	.navbar-links-link {
+		font-family: 'Montserrat';
+		font-size: $font-size-7;
+		color: $color-white;
+		font-weight: 500;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: color 0.3s ease;
+
+		&.active {
+			font-weight: 900;
+		}
+
+		&:hover {
+			color: $color-dark-grey;
+		}
+
+		@media (min-width: 992px) {
+			background: linear-gradient(to right, $color-white 0%, $color-white 100%);
+			background-position: right center;
+			background-repeat: no-repeat;
+			background-size: 0 100%;
+			padding: $spacer-1;
+			transition: background-size 0.3s ease, color 0.3s ease;
+
+			&:hover {
+				color: $color-dark-black;
+				background-size: 100% 100%;
+				background-position: left center;
+			}
+		}
+	}
+}

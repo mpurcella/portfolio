@@ -1,0 +1,45 @@
+@import '../../design-tokens/scss-variables';
+
+.social-links-list {
+	display: flex;
+
+	.social-links-item {
+		margin: 0 $spacer-4;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.social-links-link {
+		color: $color-dark-grey;
+		display: flex;
+		transition: color 0.3s ease;
+
+		&:hover {
+			color: $color-white;
+		}
+	}
+}
+
+.navbar-menu-social {
+	.social-links-link {
+		font-size: $icon-size-6;
+	}
+}
+
+.footer-social {
+	margin-bottom: $spacer-5 * 2;
+
+	@media (min-width: 992px) {
+		margin-bottom: $spacer-8;
+	}
+
+	.social-links-link {
+		font-size: $icon-size-7;
+	}
+}

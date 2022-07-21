@@ -1,0 +1,52 @@
+@import '../../design-tokens/scss-variables';
+
+.navbar-menu-button {
+	width: 24px;
+	height: 20px;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	border: none;
+	position: relative;
+	z-index: 100;
+	cursor: pointer;
+
+	.line {
+		width: 100%;
+		height: 3px;
+		background-color: $color-dark-black;
+
+		&.active {
+			background-color: $color-white;
+		}
+	}
+
+	.line-1,
+	.line-3 {
+		transition: transform 0.2s ease, background-color 0.2s ease;
+	}
+
+	.line-1 {
+		&.active {
+			transform: rotate(-45deg) translate(-5px, 7px);
+		}
+	}
+
+	.line-2 {
+		transition: opacity 0.2s ease;
+
+		&.active {
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+
+	.line-3 {
+		&.active {
+			transform: rotate(45deg) translate(-5px, -7px);
+		}
+	}
+}

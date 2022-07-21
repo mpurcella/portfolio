@@ -1,0 +1,24 @@
+@import '../../design-tokens/scss-variables';
+
+.section-text {
+	font-size: $font-size-6;
+	font-weight: 600;
+	text-align: center;
+	line-height: 1.5;
+}
+
+.about-text,
+.technologies-text,
+.work-text {
+	color: $color-dark-black;
+}
+
+.about-text,
+.work-text,
+.contact-text {
+	margin-bottom: $spacer-5 * 3;
+}
+
+.technologies-text {
+	margin-bottom: calc($spacer-5 * 3 - 14.53px);
+}

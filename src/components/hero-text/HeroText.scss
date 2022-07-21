@@ -1,0 +1,19 @@
+@import '../../design-tokens/scss-variables';
+
+.hero-text-list {
+	.hero-text-item {
+		font-size: $font-size-6;
+		font-weight: 500;
+		color: $color-light-grey;
+		text-align: center;
+		margin: $spacer-1 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

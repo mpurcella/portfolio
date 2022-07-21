@@ -1,0 +1,16 @@
+@import '../../design-tokens/scss-variables';
+
+.section-heading {
+	font-family: 'Montserrat';
+	font-size: $heading-size-2;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: $spacer-5 * 2;
+}
+
+.about-heading,
+.technologies-heading,
+.work-heading {
+	color: $color-dark-black;
+}

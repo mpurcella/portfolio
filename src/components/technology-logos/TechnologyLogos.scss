@@ -1,0 +1,39 @@
+@import '../../design-tokens/scss-variables';
+
+.technology-logos-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+
+	.technology-logos-item {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: $spacer-7;
+
+		&:last-child {
+			width: 100%;
+			margin-bottom: 0;
+
+			svg {
+				width: 50%;
+			}
+		}
+
+		svg {
+			width: 100%;
+			height: auto;
+			padding: 0 $spacer-5 0;
+			box-sizing: border-box;
+			opacity: 0.7;
+			pointer-events: none;
+		}
+
+		.technology-logos-tooltip {
+			font-size: $font-size-5;
+			font-weight: 800;
+			color: $color-dark-black;
+		}
+	}
+}
