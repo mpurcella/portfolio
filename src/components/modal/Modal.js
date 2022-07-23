@@ -23,7 +23,7 @@ const Modal = ({ isModalOpen, isSuccessful, handleModal }) => {
 		return ReactDOM.createPortal(
 			<div className='modal-overlay'>
 				<div className='modal'>
-					<button type='button' className='modal-close-button' onClick={handleModal}>
+					<button type='button' className='modal-close-button' onClick={handleModal} ariaLabel='Close'>
 						<FaTimes />
 					</button>
 					<ModalText>
@@ -45,7 +45,7 @@ const Modal = ({ isModalOpen, isSuccessful, handleModal }) => {
 		return ReactDOM.createPortal(
 			<div className='modal-overlay'>
 				<div className='modal'>
-					<button type='button' className='modal-close-button' onClick={handleModal}>
+					<button type='button' className='modal-close-button' onClick={handleModal} ariaLabel='Close'>
 						<FaTimes />
 					</button>
 					<ModalText>
@@ -64,6 +64,7 @@ const Modal = ({ isModalOpen, isSuccessful, handleModal }) => {
 							buttonLinkClassName='button-link tertiary'
 							buttonLinkPath='mailto:mjpurcella@gmail.com'
 							buttonLinkName='here'
+							ariaLabel='Open email client'
 						/>
 						.
 					</ModalText>

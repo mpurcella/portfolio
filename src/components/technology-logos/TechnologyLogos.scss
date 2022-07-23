@@ -1,39 +1,95 @@
 @import '../../design-tokens/scss-variables';
 
 .technology-logos-list {
-	width: 100%;
+	max-width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+
+	@media (min-width: 375px) {
+		max-width: 335px;
+		margin: 0 auto;
+	}
+
+	@media (min-width: 576px) {
+		max-width: 432px;
+	}
+
+	@media (min-width: 992px) {
+		max-width: 749px;
+	}
 
 	.technology-logos-item {
-		width: 50%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: $spacer-7;
+		margin: 0 $spacer-5 $spacer-5 * 2;
 
-		&:last-child {
-			width: 100%;
+		&:nth-child(7),
+		&:nth-child(8) {
 			margin-bottom: 0;
+		}
 
-			svg {
-				width: 50%;
+		@media (min-width: 992px) {
+			margin: 0 $spacer-5 * 1.5 $spacer-5 * 3;
+
+			&:nth-child(5),
+			&:nth-child(6) {
+				margin-bottom: 0;
 			}
 		}
+	}
 
-		svg {
-			width: 100%;
-			height: auto;
-			padding: 0 $spacer-5 0;
-			box-sizing: border-box;
-			opacity: 0.7;
-			pointer-events: none;
+	.technology-logos-logo {
+		font-size: $icon-size-4 * 4;
+		margin-bottom: $spacer-2;
+		display: flex;
+		opacity: 0.8;
+
+		@media (min-width: 375px) {
+			font-size: $icon-size-4 * 4.5;
 		}
+	}
 
-		.technology-logos-tooltip {
+	.html-logo {
+		color: #e34c26;
+	}
+
+	.css-logo {
+		color: #264de4;
+	}
+
+	.sass-logo {
+		color: #cd669a;
+	}
+
+	.bootstrap-logo {
+		color: #7953b2;
+	}
+
+	.javascript-logo {
+		color: #fcdc00;
+	}
+
+	.jquery-logo {
+		color: #0769ad;
+	}
+
+	.github-logo {
+		color: #171616;
+	}
+
+	.react-logo {
+		color: #61dafb;
+	}
+
+	.technology-logos-name {
+		font-size: $font-size-4;
+		font-weight: 400;
+		color: $color-dark-black;
+
+		@media (min-width: 768px) {
 			font-size: $font-size-5;
-			font-weight: 800;
-			color: $color-dark-black;
 		}
 	}
 }

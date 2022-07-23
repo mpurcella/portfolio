@@ -1,6 +1,26 @@
 @import '../../design-tokens/scss-variables';
 
 .contact-form {
+	max-width: 576px;
+
+	@media (min-width: 576px) {
+		margin: 0 auto;
+	}
+
+	.name {
+		@media (min-width: 768px) {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.first-name,
+		.last-name {
+			@media (min-width: 768px) {
+				width: calc(50% - $spacer-2);
+			}
+		}
+	}
+
 	.first-name,
 	.last-name,
 	.email-address,

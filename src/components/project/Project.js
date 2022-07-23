@@ -22,7 +22,9 @@ const Project = ({ item }) => {
 						{item.projectTechnologies.map((item) => {
 							return (
 								<li className='project-technology-item' key={item.projectTechnologyId}>
-									{item.projectTechnologyLogo}
+									<span className={`project-technology-logo ${item.projectTechnologyClassName}`}>
+										{item.projectTechnologyLogo}
+									</span>
 								</li>
 							);
 						})}

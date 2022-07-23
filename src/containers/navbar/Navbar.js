@@ -60,6 +60,7 @@ const Navbar = ({ heroRef, aboutRef, technologiesRef, workRef, contactRef }) => 
 						closeNavbarMenu();
 						handleTopScroll();
 					}}
+					onFocus={handleTopScroll}
 				>
 					<svg
 						version='1.2'

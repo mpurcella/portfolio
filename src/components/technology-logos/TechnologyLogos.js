@@ -8,8 +8,10 @@ const TechnologyLogos = () => {
 			{technologyLogosData.map((item) => {
 				return (
 					<li className='technology-logos-item' key={item.technologyId}>
-						{item.technologyLogo}
-						<span className='technology-logos-tooltip'>{item.technologyName}</span>
+						<span className={`technology-logos-logo ${item.technologyLogoClassName}`}>
+							{item.technologyLogo}
+						</span>
+						<span className='technology-logos-name'>{item.technologyName}</span>
 					</li>
 				);
 			})}

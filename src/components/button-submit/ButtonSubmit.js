@@ -3,8 +3,8 @@ import './ButtonSubmit.scss';
 
 const ButtonSubmit = ({ buttonSubmitClassName, isSubmitting }) => {
 	return (
-		<button type='submit' className={buttonSubmitClassName} disabled={isSubmitting}>
-			{isSubmitting && <span className='loader'></span>}
+		<button type='submit' className={buttonSubmitClassName} disabled={isSubmitting} aria-disabled={isSubmitting}>
+			{isSubmitting && <span className='loader' aria-live='assertive'></span>}
 			Submit
 		</button>
 	);

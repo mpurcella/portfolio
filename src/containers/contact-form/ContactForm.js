@@ -71,31 +71,33 @@ const ContactForm = () => {
 		<>
 			<form className='contact-form' onSubmit={handleSubmit(onSubmit)}>
 				<input type='hidden' value='a17d3cc8-b9d7-4c89-a622-aec5c8c5171e' {...register('access_key')} />
-				<div className='first-name'>
-					<label className='contact-form-label' htmlFor='firstName'>
-						First Name<span>&#10038;</span>
-					</label>
-					<input
-						type='text'
-						className='first-name-input'
-						id='firstName'
-						aria-required='true'
-						autoCorrect='off'
-						{...register('firstName', { required: 'A first name is required' })}
-					/>
-					{errors.firstName && <p className='form-input-error'>{errors.firstName.message}</p>}
-				</div>
-				<div className='last-name'>
-					<label className='contact-form-label' htmlFor='lastName'>
-						Last Name
-					</label>
-					<input
-						type='text'
-						className='last-name-input'
-						id='lastName'
-						autoCorrect='off'
-						{...register('lastName')}
-					/>
+				<div className='name'>
+					<div className='first-name'>
+						<label className='contact-form-label' htmlFor='firstName'>
+							First Name<span>&#10038;</span>
+						</label>
+						<input
+							type='text'
+							className='first-name-input'
+							id='firstName'
+							aria-required='true'
+							autoCorrect='off'
+							{...register('firstName', { required: 'A first name is required' })}
+						/>
+						{errors.firstName && <p className='form-input-error'>{errors.firstName.message}</p>}
+					</div>
+					<div className='last-name'>
+						<label className='contact-form-label' htmlFor='lastName'>
+							Last Name
+						</label>
+						<input
+							type='text'
+							className='last-name-input'
+							id='lastName'
+							autoCorrect='off'
+							{...register('lastName')}
+						/>
+					</div>
 				</div>
 				<div className='email-address'>
 					<label className='contact-form-label' htmlFor='emailAddress'>
