@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { navbarLinksData } from './NavbarLinksData';
 import './NavbarLinks.scss';
 
-const NavbarLinks = ({ closeNavbarMenu, aboutRef, technologiesRef, workRef, contactRef }) => {
+const NavbarLinks = ({ closeNavbarMenu, aboutRef, technologiesRef, workRef, contactRef, tabIndex }) => {
 	// Scrolls to 'About' Section
 	const handleAboutScroll = () => {
 		aboutRef.current.scrollIntoView({
@@ -141,11 +141,14 @@ const NavbarLinks = ({ closeNavbarMenu, aboutRef, technologiesRef, workRef, cont
 			<li className='navbar-links-item'>
 				<Link
 					to={navbarLinksData[0].linkPath}
+					title={navbarLinksData[0].linkName}
 					className={aboutActive ? 'navbar-links-link active' : 'navbar-links-link'}
-					onClick={() => {
+					onClick={(e) => {
+						e.preventDefault();
 						handleAboutScroll();
 						closeNavbarMenu();
 					}}
+					tabIndex={tabIndex}
 				>
 					{navbarLinksData[0].linkName}
 				</Link>
@@ -153,11 +156,14 @@ const NavbarLinks = ({ closeNavbarMenu, aboutRef, technologiesRef, workRef, cont
 			<li className='navbar-links-item'>
 				<Link
 					to={navbarLinksData[1].linkPath}
+					title={navbarLinksData[1].linkName}
 					className={technologiesActive ? 'navbar-links-link active' : 'navbar-links-link'}
-					onClick={() => {
+					onClick={(e) => {
+						e.preventDefault();
 						handleTechnologiesScroll();
 						closeNavbarMenu();
 					}}
+					tabIndex={tabIndex}
 				>
 					{navbarLinksData[1].linkName}
 				</Link>
@@ -165,11 +171,14 @@ const NavbarLinks = ({ closeNavbarMenu, aboutRef, technologiesRef, workRef, cont
 			<li className='navbar-links-item'>
 				<Link
 					to={navbarLinksData[2].linkPath}
+					title={navbarLinksData[2].linkName}
 					className={workActive ? 'navbar-links-link active' : 'navbar-links-link'}
-					onClick={() => {
+					onClick={(e) => {
+						e.preventDefault();
 						handleWorkScroll();
 						closeNavbarMenu();
 					}}
+					tabIndex={tabIndex}
 				>
 					{navbarLinksData[2].linkName}
 				</Link>
@@ -177,11 +186,14 @@ const NavbarLinks = ({ closeNavbarMenu, aboutRef, technologiesRef, workRef, cont
 			<li className='navbar-links-item'>
 				<Link
 					to={navbarLinksData[3].linkPath}
+					title={navbarLinksData[3].linkName}
 					className={contactActive ? 'navbar-links-link active' : 'navbar-links-link'}
-					onClick={() => {
+					onClick={(e) => {
+						e.preventDefault();
 						handleContactScroll();
 						closeNavbarMenu();
 					}}
+					tabIndex={tabIndex}
 				>
 					{navbarLinksData[3].linkName}
 				</Link>

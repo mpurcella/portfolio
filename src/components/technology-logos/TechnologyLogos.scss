@@ -7,16 +7,20 @@
 	justify-content: center;
 
 	@media (min-width: 375px) {
-		max-width: 335px;
+		max-width: 260px;
 		margin: 0 auto;
 	}
 
 	@media (min-width: 576px) {
-		max-width: 432px;
+		max-width: 480px;
+	}
+
+	@media (min-width: 768px) {
+		max-width: 560px;
 	}
 
 	@media (min-width: 992px) {
-		max-width: 749px;
+		max-width: 600px;
 	}
 
 	.technology-logos-item {
@@ -30,13 +34,19 @@
 			margin-bottom: 0;
 		}
 
-		@media (min-width: 992px) {
-			margin: 0 $spacer-5 * 1.5 $spacer-5 * 3;
+		@media (min-width: 576px) {
+			margin: 0 $spacer-3 * 2 $spacer-6 * 2;
+		}
 
+		@media (min-width: 768px) {
 			&:nth-child(5),
 			&:nth-child(6) {
 				margin-bottom: 0;
 			}
+		}
+
+		@media (min-width: 992px) {
+			margin: 0 $spacer-5 * 1.5 $spacer-5 * 3;
 		}
 	}
 
@@ -53,34 +63,42 @@
 
 	.html-logo {
 		color: #e34c26;
+		filter: drop-shadow(2px 2px 1px rgba(#e34c26, 0.3));
 	}
 
 	.css-logo {
 		color: #264de4;
+		filter: drop-shadow(2px 2px 1px rgba(#264de4, 0.3));
 	}
 
 	.sass-logo {
 		color: #cd669a;
+		filter: drop-shadow(2px 2px 1px rgba(#cd669a, 0.3));
 	}
 
 	.bootstrap-logo {
 		color: #7953b2;
+		filter: drop-shadow(2px 2px 1px rgba(#7953b2, 0.3));
 	}
 
 	.javascript-logo {
 		color: #fcdc00;
+		filter: drop-shadow(2px 2px 1px rgba(#fcdc00, 0.3));
 	}
 
 	.jquery-logo {
 		color: #0769ad;
+		filter: drop-shadow(2px 2px 1px rgba(#0769ad, 0.3));
 	}
 
 	.github-logo {
 		color: #171616;
+		filter: drop-shadow(2px 2px 1px rgba(#171616, 0.3));
 	}
 
 	.react-logo {
 		color: #61dafb;
+		filter: drop-shadow(2px 2px 1px rgba(#61dafb, 0.3));
 	}
 
 	.technology-logos-name {

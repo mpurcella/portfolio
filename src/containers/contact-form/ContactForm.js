@@ -82,7 +82,7 @@ const ContactForm = () => {
 							id='firstName'
 							aria-required='true'
 							autoCorrect='off'
-							{...register('firstName', { required: 'A first name is required' })}
+							{...register('firstName', { required: 'This field is required' })}
 						/>
 						{errors.firstName && <p className='form-input-error'>{errors.firstName.message}</p>}
 					</div>
@@ -110,7 +110,7 @@ const ContactForm = () => {
 						aria-required='true'
 						autoCorrect='off'
 						{...register('emailAddress', {
-							required: 'An email address is required',
+							required: 'This field is required',
 							pattern: {
 								value: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
 								message: 'Invalid email address'
@@ -129,11 +129,11 @@ const ContactForm = () => {
 						rows='8'
 						aria-required='true'
 						autoCorrect='off'
-						{...register('messageText', { required: 'A message is required' })}
+						{...register('messageText', { required: 'This field is required' })}
 					></textarea>
 					{errors.messageText && <p className='form-input-error'>{errors.messageText.message}</p>}
 				</div>
-				<div className='contact-form-submit'>
+				<div className='submit-button-container'>
 					<ButtonSubmit
 						buttonSubmitClassName={isSubmitting ? 'button-submit disabled' : 'button-submit'}
 						isSubmitting={isSubmitting}

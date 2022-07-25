@@ -1,19 +1,29 @@
 @import '../../design-tokens/scss-variables';
 
 .modal-text {
-	font-size: $font-size-6;
 	color: $color-white;
-	font-weight: 600;
 	text-align: center;
 	line-height: 1.5;
+
+	@media (min-width: 768px) {
+		font-size: $font-size-6;
+	}
 
 	.modal-greeting {
 		font-family: 'Montserrat';
 		font-size: $font-size-7;
 		font-weight: 900;
+
+		@media (min-width: 768px) {
+			font-size: $font-size-2 * 2;
+		}
 	}
 
 	.modal-emoji {
 		font-size: $icon-size-6 * 2;
+
+		@media (min-width: 768px) {
+			font-size: $icon-size-7 * 2;
+		}
 	}
 }

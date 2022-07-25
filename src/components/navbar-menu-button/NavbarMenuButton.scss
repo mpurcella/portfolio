@@ -1,18 +1,34 @@
 @import '../../design-tokens/scss-variables';
 
 .navbar-menu-button {
-	width: 24px;
-	height: 20px;
+	width: 32px;
+	height: 28px;
 	background-color: transparent;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0;
+	padding: $spacer-1;
 	border: none;
 	position: relative;
 	z-index: 100;
 	cursor: pointer;
+
+	&.active {
+		&:focus {
+			width: 29px;
+			padding: $spacer-1 $spacer-1 $spacer-1 calc($spacer-1 - 3px);
+			outline: none;
+			border-radius: 4px;
+			box-shadow: 0 0 0 0.4rem rgba($color-white, 0.4);
+		}
+	}
+
+	&:focus {
+		outline: none;
+		border-radius: 4px;
+		box-shadow: 0 0 0 0.4rem rgba($color-dark-black, 0.4);
+	}
 
 	.line {
 		width: 100%;

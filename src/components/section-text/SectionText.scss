@@ -1,9 +1,6 @@
 @import '../../design-tokens/scss-variables';
 
 .section-text {
-	font-size: $font-size-5;
-	font-weight: 400;
-	text-align: center;
 	line-height: 1.5;
 	margin-bottom: $spacer-5 * 2;
 
@@ -16,4 +13,18 @@
 .technologies-text,
 .work-text {
 	color: $color-dark-black;
+}
+
+.technologies-text,
+.work-text,
+.contact-text {
+	text-align: center;
+}
+
+.about-text {
+	text-align: center;
+
+	@media (min-width: 992px) {
+		text-align: unset;
+	}
 }

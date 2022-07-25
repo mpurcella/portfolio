@@ -8,9 +8,9 @@ const projectData = [
 		projectImage: HeartLine,
 		projectAlt: 'Heart Line Website Home Page',
 		projectDescription:
-			'This project was created to gain experience working with React and to explore its many features and subtleties - from initializing and setting states, to passing props, to utilizing hooks, to creating a dynamic routing system and easily navigable website.',
+			'This project was created to gain experience working with React and to explore its many features and subtleties, including initializing and setting states, passing props, utilizing hooks, and creating a dynamic routing system and easily navigable website.',
 		projectInspiration:
-			'As a musician, I have always dreamed of writing, recording, and releasing an album. That dream was the inspiration for this website.',
+			'As a musician, I have always dreamed of writing, recording, and releasing an album. That dream was the inspiration for this website. Maybe one day that dream will become a reality',
 		projectTechnologies: [
 			{
 				projectTechnologyLogo: <SiReact />,

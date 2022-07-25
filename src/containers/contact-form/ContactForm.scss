@@ -1,13 +1,15 @@
 @import '../../design-tokens/scss-variables';
 
 .contact-form {
-	max-width: 576px;
+	max-width: 600px;
 
 	@media (min-width: 576px) {
 		margin: 0 auto;
 	}
 
 	.name {
+		margin-bottom: $spacer-5 * 2;
+
 		@media (min-width: 768px) {
 			display: flex;
 			justify-content: space-between;
@@ -19,15 +21,18 @@
 				width: calc(50% - $spacer-2);
 			}
 		}
+
+		.first-name {
+			@media (min-width: 768px) {
+				margin-bottom: 0;
+			}
+		}
 	}
 
 	.first-name,
 	.last-name,
 	.email-address,
 	.message {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: $spacer-5;
 		position: relative;
 
 		.contact-form-label {
@@ -57,48 +62,38 @@
 			font-size: $font-size-5;
 			color: $color-white;
 			caret-color: $color-white;
-			background-color: $color-dark-black;
+			background-color: transparent;
 			border: 1px solid lighten($color-dark-black, 10%);
 			border-radius: 4px;
 			padding: $spacer-3;
 			box-sizing: border-box;
-			transition: 0.3s ease;
+			transition: box-shadow 0.3s ease;
 
 			&:focus {
 				outline: none;
-				border-color: $color-light-grey;
+				border-color: rgba($color-white, 0.4);
+				box-shadow: 0 0 0 0.4rem rgba($color-white, 0.4);
 			}
 		}
 	}
 
 	.first-name,
-	.last-name,
-	.email-address {
-		margin-bottom: $spacer-5 * 1.8;
-	}
-
-	.first-name,
 	.email-address,
 	.message {
+		margin-bottom: $spacer-5 * 2;
+
 		.form-input-error {
 			width: 100%;
-			font-size: $font-size-3;
-			font-weight: 500;
+			font-size: $font-size-4;
 			text-align: center;
 			color: $color-red;
-			display: flex;
-			justify-content: center;
 			position: absolute;
-			top: calc(100% + $spacer-1);
+			top: calc(100% + $spacer-1 + 0.2rem);
 			left: 0;
 		}
 	}
 
-	.message {
-		margin-bottom: $spacer-5 * 2;
-	}
-
-	.contact-form-submit {
+	.submit-button-container {
 		display: flex;
 		justify-content: center;
 	}

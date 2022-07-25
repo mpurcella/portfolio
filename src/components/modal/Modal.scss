@@ -14,6 +14,7 @@
 
 	.modal {
 		width: 100%;
+		max-width: 600px;
 		background-color: $color-light-black;
 		padding: $spacer-5 * 2 $spacer-6;
 		box-sizing: border-box;
@@ -25,15 +26,23 @@
 			font-size: $font-size-7;
 			color: $color-dark-grey;
 			background-color: transparent;
-			padding: 0;
+			display: flex;
+			padding: $spacer-1;
 			border: none;
 			position: absolute;
-			top: 2px;
-			right: 2px;
+			top: 4px;
+			right: 4px;
+			cursor: pointer;
 			transition: color 0.3s ease;
 
 			&:hover {
 				color: $color-white;
+			}
+
+			&:focus {
+				outline: none;
+				border-radius: 4px;
+				box-shadow: 0 0 0 0.4rem rgba($color-white, 0.4);
 			}
 		}
 	}

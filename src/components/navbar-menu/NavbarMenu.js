@@ -3,8 +3,8 @@ import NavbarLinks from '../../containers/navbar-links/NavbarLinks';
 import SocialLinks from '../social-links/SocialLinks';
 import './NavbarMenu.scss';
 
-const NavbarMenu = ({ navbarMenu, closeNavbarMenu, aboutRef, technologiesRef, workRef, contactRef }) => {
-	// Disables scrolling & darkens "Main" and "Footer" when Navbar Menu is open
+const NavbarMenu = ({ navbarMenu, closeNavbarMenu, aboutRef, technologiesRef, workRef, contactRef, focusDisabled }) => {
+	// Disables scrolling & blurs "Main" and "Footer" when Navbar Menu is open
 	useEffect(() => {
 		const body = document.body;
 		const main = document.querySelector('.main');
@@ -21,16 +21,20 @@ const NavbarMenu = ({ navbarMenu, closeNavbarMenu, aboutRef, technologiesRef, wo
 		};
 	}, [navbarMenu]);
 
+	// Sets Tab Index for Navbar Menu Links
+	const tabIndex = focusDisabled ? 0 : -1;
+
 	return (
-		<div className={navbarMenu ? 'navbar-menu open' : 'navbar-menu'}>
+		<div className={navbarMenu ? 'navbar-menu open' : 'navbar-menu'} id='navbar-menu'>
 			<NavbarLinks
 				closeNavbarMenu={closeNavbarMenu}
 				aboutRef={aboutRef}
 				technologiesRef={technologiesRef}
 				workRef={workRef}
 				contactRef={contactRef}
+				tabIndex={tabIndex}
 			/>
-			<SocialLinks socialLinksClassName='social-links-list navbar-menu-social' />
+			<SocialLinks socialLinksClassName='social-links-list navbar-menu-social' tabIndex={tabIndex} />
 		</div>
 	);
 };

@@ -4,21 +4,36 @@
 .navbar-links-list {
 	margin-bottom: $spacer-6 * 4;
 
+	@media (min-width: 768px) {
+		display: flex;
+		margin-bottom: unset;
+	}
+
 	.navbar-links-item {
 		display: flex;
 		justify-content: center;
-		margin: $spacer-7 0;
+		margin: $spacer-6 0;
 
 		&:first-child {
 			margin-top: 0;
+
+			@media (min-width: 768px) {
+				margin-top: unset;
+				margin-left: 0;
+			}
 		}
 
 		&:last-child {
 			margin-bottom: 0;
+
+			@media (min-width: 768px) {
+				margin-top: unset;
+				margin-right: 0;
+			}
 		}
 
-		@media (min-width: 992px) {
-			margin: $spacer-6 0;
+		@media (min-width: 768px) {
+			margin: 0 $spacer-4;
 		}
 	}
 
@@ -29,28 +44,52 @@
 		font-weight: 500;
 		text-transform: uppercase;
 		text-decoration: none;
+		padding: $spacer-1;
 		transition: color 0.3s ease;
 
 		&.active {
 			font-weight: 900;
+
+			@media (min-width: 768px) {
+				font-weight: 600;
+			}
 		}
 
 		&:hover {
 			color: $color-dark-grey;
 		}
 
-		@media (min-width: 992px) {
-			background: linear-gradient(to right, $color-white 0%, $color-white 100%);
-			background-position: right center;
-			background-repeat: no-repeat;
-			background-size: 0 100%;
-			padding: $spacer-1;
-			transition: background-size 0.3s ease, color 0.3s ease;
+		&:focus {
+			outline: none;
+			border-radius: 4px;
+			box-shadow: 0 0 0 0.4rem rgba($color-white, 0.4);
+		}
+
+		@media (min-width: 768px) {
+			font-size: $font-size-4;
+			font-weight: unset;
+			color: $color-dark-black;
+			position: relative;
+
+			&::after {
+				height: 0;
+				content: attr(title);
+				font-weight: 600;
+				display: block;
+				margin-top: -1px;
+				overflow: hidden;
+				visibility: hidden;
+			}
 
 			&:hover {
 				color: $color-dark-black;
-				background-size: 100% 100%;
-				background-position: left center;
+				font-weight: 600;
+			}
+
+			&:focus {
+				outline: none;
+				border-radius: 4px;
+				box-shadow: 0 0 0 0.4rem rgba($color-dark-black, 0.4);
 			}
 		}
 	}

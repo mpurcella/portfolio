@@ -2,7 +2,7 @@ import React from 'react';
 import { socialLinksData } from './SocialLinksData';
 import './SocialLinks.scss';
 
-const SocialLinks = ({ socialLinksClassName }) => {
+const SocialLinks = ({ socialLinksClassName, tabIndex }) => {
 	return (
 		<ul className={socialLinksClassName}>
 			{socialLinksData.map((item) => {
@@ -14,6 +14,7 @@ const SocialLinks = ({ socialLinksClassName }) => {
 							aria-label={item.linkName}
 							target='_blank'
 							rel='noopener noreferrer'
+							tabIndex={tabIndex}
 						>
 							{item.linkIcon}
 						</a>
