@@ -10,7 +10,7 @@
 	position: fixed;
 	top: 0;
 	z-index: 100;
-	transition: height 0.3s ease, background-color 0.3s ease, top 0.25s ease;
+	transition: height 0.3s ease, background-color 0.3s ease;
 
 	@media (min-width: 768px) {
 		padding: 0 $spacer-5 * 2;
@@ -18,17 +18,9 @@
 
 	&.scrolled {
 		height: 60px;
-		background-color: rgba($color-white, 0.7);
+		background-color: rgba($color-white, 0.6);
 		box-shadow: 0px 0px 6px 1px rgba($color-dark-black, 0.4);
 		backdrop-filter: blur(10px);
-	}
-
-	&.visible {
-		top: 0;
-	}
-
-	&.hidden {
-		top: -60px;
 	}
 
 	.navbar {

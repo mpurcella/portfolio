@@ -5,7 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: calc($spacer-7 - $spacer-1) $spacer-6 $spacer-4;
+	padding: $spacer-7 $spacer-6 $spacer-4;
 
 	&-link {
 		font-family: 'Montserrat';
@@ -15,7 +15,7 @@
 		text-decoration: none;
 		text-align: center;
 		line-height: 1.25;
-		margin-bottom: calc($spacer-5 * 2 - $spacer-1);
+		margin-bottom: calc($spacer-5 * 2);
 		padding: $spacer-1;
 		transition: color 0.3s ease;
 
@@ -27,21 +27,6 @@
 			outline: none;
 			border-radius: 4px;
 			box-shadow: 0 0 0 0.4rem rgba($color-white, 0.4);
-		}
-
-		@media (min-width: 992px) {
-			background: linear-gradient(to right, $color-white 0%, $color-white 100%);
-			background-position: right center;
-			background-repeat: no-repeat;
-			background-size: 0 100%;
-			padding: $spacer-1;
-			transition: background-size 0.3s ease, color 0.3s ease;
-
-			&:hover {
-				color: $color-dark-black;
-				background-size: 100% 100%;
-				background-position: left center;
-			}
 		}
 	}
 

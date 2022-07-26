@@ -4,6 +4,12 @@
 .navbar-links-list {
 	margin-bottom: $spacer-6 * 4;
 
+	// Mobile Landscape
+	@media (max-width: 768px) and (max-height: 480px) {
+		display: flex;
+		margin: $spacer-5 0 $spacer-5 * 2;
+	}
+
 	@media (min-width: 768px) {
 		display: flex;
 		margin-bottom: unset;
@@ -12,28 +18,24 @@
 	.navbar-links-item {
 		display: flex;
 		justify-content: center;
-		margin: $spacer-6 0;
 
-		&:first-child {
-			margin-top: 0;
-
-			@media (min-width: 768px) {
-				margin-top: unset;
-				margin-left: 0;
-			}
+		&:not(:last-child) {
+			margin-bottom: $spacer-6;
 		}
 
-		&:last-child {
-			margin-bottom: 0;
-
-			@media (min-width: 768px) {
-				margin-top: unset;
-				margin-right: 0;
+		// Mobile Landscape
+		@media (max-width: 768px) and (max-height: 480px) {
+			&:not(:last-child) {
+				margin-bottom: unset;
+				margin-right: $spacer-8;
 			}
 		}
 
 		@media (min-width: 768px) {
-			margin: 0 $spacer-4;
+			&:not(:last-child) {
+				margin-bottom: unset;
+				margin-right: $spacer-5;
+			}
 		}
 	}
 
@@ -50,8 +52,8 @@
 		&.active {
 			font-weight: 900;
 
-			@media (min-width: 768px) {
-				font-weight: 600;
+			&:hover {
+				color: $color-white;
 			}
 		}
 
@@ -67,7 +69,7 @@
 
 		@media (min-width: 768px) {
 			font-size: $font-size-4;
-			font-weight: unset;
+			font-weight: 500;
 			color: $color-dark-black;
 			position: relative;
 
@@ -79,6 +81,14 @@
 				margin-top: -1px;
 				overflow: hidden;
 				visibility: hidden;
+			}
+
+			&.active {
+				font-weight: 600;
+
+				&:hover {
+					color: $color-dark-black;
+				}
 			}
 
 			&:hover {

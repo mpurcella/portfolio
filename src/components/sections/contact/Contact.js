@@ -13,12 +13,14 @@ const Contact = ({ contactRef }) => {
 					sectionHeadingClassName='section-heading contact-heading'
 					sectionHeadingName='Contact'
 				/>
-				<SectionText sectionTextClassName='section-text contact-text'>
-					Want to connect, collaborate, hire me, or learn more about what makes me...me?
-					<br />
-					<br />
-					Just fill out the form below!
-				</SectionText>
+				<div className='work-info'>
+					<SectionText sectionTextClassName='section-text contact-text'>
+						Want to connect, collaborate, hire me, or learn more about what makes me...me?
+					</SectionText>
+					<SectionText sectionTextClassName='section-text contact-text'>
+						Just fill out the form below!
+					</SectionText>
+				</div>
 				<ContactForm />
 			</Wrapper>
 		</section>

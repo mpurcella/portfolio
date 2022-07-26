@@ -27,14 +27,16 @@ const Work = ({ workRef }) => {
 			<section id='work' ref={workRef}>
 				<Wrapper>
 					<SectionHeading sectionHeadingClassName='section-heading work-heading' sectionHeadingName='Work' />
-					<SectionText sectionTextClassName='section-text work-text'>
-						The projects featured below are just a snapshot of the skills and creativity that I feel best
-						reflect my growth as&nbsp;a&nbsp;developer.
-						<br />
-						<br />
-						This website will be forever evolving to document and showcase my journey. Check back
-						occasionally to see where I have ended up and what I have&nbsp;created.
-					</SectionText>
+					<div className='work-info'>
+						<SectionText sectionTextClassName='section-text work-text'>
+							The projects featured below are just a snapshot of the skills and creativity that I feel
+							best reflect my growth as&nbsp;a&nbsp;developer.
+						</SectionText>
+						<SectionText sectionTextClassName='section-text work-text'>
+							This website will be forever evolving to document and showcase my journey. Check back
+							occasionally to see where I have ended up and what I have&nbsp;created.
+						</SectionText>
+					</div>
 					<ul className='project-list'>
 						{projectData.map((item) => {
 							return (
@@ -52,14 +54,16 @@ const Work = ({ workRef }) => {
 			<section id='work' ref={workRef}>
 				<Wrapper>
 					<SectionHeading sectionHeadingClassName='section-heading work-heading' sectionHeadingName='Work' />
-					<SectionText sectionTextClassName='section-text work-text'>
-						The projects featured below are just a snapshot of the skills and creativity that I feel best
-						reflect my growth as&nbsp;a&nbsp;developer.
-						<br />
-						<br />
-						This website will forever evolve to document and showcase my journey. Check back occasionally to
-						see where I have ended up and what I have&nbsp;created.
-					</SectionText>
+					<div className='work-info'>
+						<SectionText sectionTextClassName='section-text work-text'>
+							The projects featured below are just a snapshot of the skills and creativity that I feel
+							best reflect my growth as&nbsp;a&nbsp;developer.
+						</SectionText>
+						<SectionText sectionTextClassName='section-text work-text'>
+							This website will forever evolve to document and showcase my journey. Check back
+							occasionally to see where I have ended up and what I have&nbsp;created.
+						</SectionText>
+					</div>
 				</Wrapper>
 				<ul className='project-list'>
 					{projectData.map((item) => {

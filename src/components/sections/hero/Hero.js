@@ -1,7 +1,7 @@
 import React from 'react';
 import Wrapper from '../../wrapper/Wrapper';
 import HeroHeading from '../../hero-heading/HeroHeading';
-import HeroSubheading from '../../hero-subheading/HeroSubheading';
+// import HeroSubheading from '../../hero-subheading/HeroSubheading';
 import HeroText from '../../hero-text/HeroText';
 import './Hero.scss';
 
@@ -10,7 +10,7 @@ const Hero = ({ heroRef }) => {
 		<section id='hero' ref={heroRef}>
 			<Wrapper>
 				<HeroHeading />
-				<HeroSubheading />
+				{/* <HeroSubheading /> */}
 				<HeroText />
 			</Wrapper>
 		</section>

@@ -4,14 +4,8 @@
 	display: flex;
 
 	.social-links-item {
-		margin: 0 $spacer-3;
-
-		&:first-child {
-			margin-left: 0;
-		}
-
-		&:last-child {
-			margin-right: 0;
+		&:not(:last-child) {
+			margin-right: $spacer-6;
 		}
 	}
 

@@ -53,6 +53,10 @@
 			@media (min-width: 992px) {
 				width: 70%;
 			}
+
+			@media (min-width: 1200px) {
+				width: 65%;
+			}
 		}
 
 		.project-info {
@@ -191,7 +195,7 @@
 
 			.project-info {
 				@media (min-width: 992px) {
-					margin-left: -$spacer-5 * 7;
+					margin-left: -$spacer-5 * 12;
 					order: 1;
 				}
 			}
@@ -210,7 +214,7 @@
 
 			.project-info {
 				@media (min-width: 992px) {
-					margin-right: -$spacer-5 * 7;
+					margin-right: -$spacer-5 * 12;
 					order: 0;
 				}
 			}

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import FocusLock from 'react-focus-lock';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
-import ScrollListener from '../scroll-listener/ScrollListener';
 import NavbarMenuButton from '../../components/navbar-menu-button/NavbarMenuButton';
 import NavbarMenu from '../../components/navbar-menu/NavbarMenu';
 import NavbarLinks from '../navbar-links/NavbarLinks';
@@ -68,23 +67,9 @@ const Navbar = ({ heroRef, aboutRef, technologiesRef, workRef, contactRef }) => 
 		};
 	}, [headerScrolled]);
 
-	// Shows/hides navbar on scroll up/down
-	const [headerVisible, setHeaderVisible] = useState(true);
-	const scroll = ScrollListener();
-
-	useEffect(() => {
-		if (scroll.y > 60 && scroll.y - scroll.lastY > 0) {
-			setHeaderVisible(false);
-		} else {
-			setHeaderVisible(true);
-		}
-	}, [scroll.y, scroll.lastY]);
-
 	// Handles classNames for Header/Navbar
 	const headerClassNames = classNames('header', {
-		scrolled: headerScrolled,
-		hidden: !headerVisible,
-		visible: headerVisible
+		scrolled: headerScrolled
 	});
 
 	// Scrolls to 'Top' Section
@@ -144,6 +129,7 @@ const Navbar = ({ heroRef, aboutRef, technologiesRef, workRef, contactRef }) => 
 						technologiesRef={technologiesRef}
 						workRef={workRef}
 						contactRef={contactRef}
+						closeNavbarMenu={closeNavbarMenu}
 					/>
 				</nav>
 			</header>

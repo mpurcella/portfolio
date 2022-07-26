@@ -1,10 +1,29 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import ButtonLink from '../button-link/ButtonLink';
 import './Project.scss';
 
 const Project = ({ item }) => {
 	return (
-		<div className='project'>
+		<motion.div
+			className='project'
+			initial={{
+				opacity: 0,
+				y: 30
+			}}
+			whileInView={{
+				opacity: 1,
+				y: 0
+			}}
+			transition={{
+				duration: 0.4,
+				ease: 'linear'
+			}}
+			viewport={{
+				once: true,
+				amount: 0.2
+			}}
+		>
 			<h3 className='project-name'>{item.projectName}</h3>
 			<div className='project-body'>
 				<img src={item.projectImage} className='project-image' alt={item.projectAlt} />
@@ -30,7 +49,25 @@ const Project = ({ item }) => {
 					</div>
 				</div>
 			</div>
-			<div className='project-button-link-container'>
+			<motion.div
+				className='project-button-link-container'
+				initial={{
+					opacity: 0,
+					y: 30
+				}}
+				whileInView={{
+					opacity: 1,
+					y: 0
+				}}
+				transition={{
+					duration: 0.4,
+					ease: 'linear'
+				}}
+				viewport={{
+					once: true,
+					amount: 0.2
+				}}
+			>
 				<ButtonLink
 					buttonLinkClassName='button-link primary'
 					buttonLinkPath={item.projectPathSite}
@@ -41,8 +78,8 @@ const Project = ({ item }) => {
 					buttonLinkPath={item.projectPathGithub}
 					buttonLinkName='View Code'
 				/>
-			</div>
-		</div>
+			</motion.div>
+		</motion.div>
 	);
 };
 

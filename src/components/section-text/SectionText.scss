@@ -1,8 +1,8 @@
 @import '../../design-tokens/scss-variables';
 
 .section-text {
+	text-align: center;
 	line-height: 1.5;
-	margin-bottom: $spacer-5 * 2;
 
 	@media (min-width: 768px) {
 		font-size: $font-size-6;
@@ -15,16 +15,30 @@
 	color: $color-dark-black;
 }
 
-.technologies-text,
+.about-text,
 .work-text,
 .contact-text {
-	text-align: center;
+	&:not(:last-child) {
+		margin-bottom: $spacer-7;
+	}
+
+	&:last-child {
+		margin-bottom: $spacer-5 * 2;
+	}
 }
 
 .about-text {
-	text-align: center;
+	&:last-child {
+		@media (min-width: 992px) {
+			margin-bottom: 0;
+		}
+	}
 
 	@media (min-width: 992px) {
 		text-align: unset;
 	}
+}
+
+.technologies-text {
+	margin-bottom: $spacer-5 * 2;
 }
