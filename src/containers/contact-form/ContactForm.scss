@@ -41,8 +41,12 @@
 			background-color: $color-dark-black;
 			padding: 0 $spacer-1;
 			position: absolute;
-			top: -6px;
+			top: -4px;
 			left: 8px;
+
+			@media (min-width: 576px) {
+				top: -7px;
+			}
 
 			span {
 				font-size: $font-size-1;
