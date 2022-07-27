@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfoliov3/static/css/main.4a9cc9eb.css",
+    "main.js": "/portfoliov3/static/js/main.4e7dc6a3.js",
+    "static/media/white-texture.jpeg": "/portfoliov3/static/media/white-texture.309a647ea971c2630ba8.jpeg",
+    "static/media/portrait.jpeg": "/portfoliov3/static/media/portrait.aadadb3a905b4a5976c5.jpeg",
+    "static/media/jukebox-monkey-records.jpeg": "/portfoliov3/static/media/jukebox-monkey-records.b47d00bc5d5e6d2d9b7c.jpeg",
+    "static/media/heart-line.jpeg": "/portfoliov3/static/media/heart-line.3768078e0593af534a65.jpeg",
+    "static/media/Montserrat-Medium.woff2": "/portfoliov3/static/media/Montserrat-Medium.413184b7e31531411178.woff2",
+    "static/media/Montserrat-Light.woff2": "/portfoliov3/static/media/Montserrat-Light.107b9ea1b8391cbb4449.woff2",
+    "static/media/Montserrat-Bold.woff2": "/portfoliov3/static/media/Montserrat-Bold.101131fa959672b5e8cc.woff2",
+    "static/media/Montserrat-ExtraBold.woff2": "/portfoliov3/static/media/Montserrat-ExtraBold.2a159cf54f2fcffee9c6.woff2",
+    "static/media/Montserrat-Regular.woff2": "/portfoliov3/static/media/Montserrat-Regular.717bd5b26fc4201df730.woff2",
+    "static/media/Montserrat-SemiBold.woff2": "/portfoliov3/static/media/Montserrat-SemiBold.9af6b159e11cb05e446c.woff2",
+    "static/media/Montserrat-ExtraLight.woff2": "/portfoliov3/static/media/Montserrat-ExtraLight.4f6d95194b8e6d80697e.woff2",
+    "static/media/Montserrat-Black.woff2": "/portfoliov3/static/media/Montserrat-Black.17ad6839ab38d4333a60.woff2",
+    "static/media/Montserrat-Thin.woff2": "/portfoliov3/static/media/Montserrat-Thin.40f92f3279c30e27c11d.woff2",
+    "static/media/ProximaNova-Light.woff2": "/portfoliov3/static/media/ProximaNova-Light.b7c9e6a2988f2d45f8e5.woff2",
+    "static/media/ProximaNova-Bold.woff2": "/portfoliov3/static/media/ProximaNova-Bold.ac8f6d49a3ab773d65fb.woff2",
+    "static/media/ProximaNova-Medium.woff2": "/portfoliov3/static/media/ProximaNova-Medium.27775a89c34c032cf25d.woff2",
+    "static/media/ProximaNova-Regular.woff2": "/portfoliov3/static/media/ProximaNova-Regular.fc66b2ec6afc47873ab9.woff2",
+    "static/media/ProximaNova-Extrabld.woff2": "/portfoliov3/static/media/ProximaNova-Extrabld.8238a9338e4b1fd3e037.woff2",
+    "static/media/ProximaNova-Semibold.woff2": "/portfoliov3/static/media/ProximaNova-Semibold.e1edba3a9cd871f73119.woff2",
+    "static/media/ProximaNovaT-Thin.woff2": "/portfoliov3/static/media/ProximaNovaT-Thin.ddd8689599e08cf876cd.woff2",
+    "static/media/ProximaNova-Black.woff2": "/portfoliov3/static/media/ProximaNova-Black.c64940f9a82d6427e149.woff2",
+    "static/media/Hillray-Outline.woff2": "/portfoliov3/static/media/Hillray-Outline.4acf021b72e0d42bf040.woff2",
+    "static/media/Hillray-Regular.woff2": "/portfoliov3/static/media/Hillray-Regular.d2f4b2326f416c74b9dd.woff2",
+    "index.html": "/portfoliov3/index.html",
+    "main.4a9cc9eb.css.map": "/portfoliov3/static/css/main.4a9cc9eb.css.map",
+    "main.4e7dc6a3.js.map": "/portfoliov3/static/js/main.4e7dc6a3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a9cc9eb.css",
+    "static/js/main.4e7dc6a3.js"
+  ]
+}
