@@ -1,1 +1,1 @@
-A portfolio to showcase some of my work
+A portfolio to showcase some of my work.
