@@ -12,18 +12,20 @@ const TechnologyLogos = () => {
 						className='technology-logos-item'
 						key={item.technologyId}
 						initial={{
-							opacity: 0
+							opacity: 0,
+							y: 30
 						}}
 						whileInView={{
-							opacity: 1
+							opacity: 1,
+							y: 0
 						}}
 						transition={{
-							duration: 0.6,
+							duration: 0.4,
 							ease: 'linear'
 						}}
 						viewport={{
 							once: true,
-							amount: 0.6
+							amount: 0.2
 						}}
 					>
 						<span className={`technology-logos-logo ${item.technologyLogoClassName}`}>

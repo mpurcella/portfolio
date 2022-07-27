@@ -51,21 +51,21 @@ const Navbar = ({ heroRef, aboutRef, technologiesRef, workRef, contactRef }) => 
 	// Sets state of Header when scrolled
 	const [headerScrolled, setHeaderScroll] = useState(false);
 
-	const handleHeaderScrolled = () => {
-		if (window.scrollY > 60) {
-			setHeaderScroll(true);
-		} else {
-			setHeaderScroll(false);
-		}
-	};
-
 	useEffect(() => {
+		const handleHeaderScrolled = () => {
+			if (window.scrollY > 60) {
+				setHeaderScroll(true);
+			} else {
+				setHeaderScroll(false);
+			}
+		};
+
 		window.addEventListener('scroll', handleHeaderScrolled);
 
 		return () => {
 			window.removeEventListener('scroll', handleHeaderScrolled);
 		};
-	}, [headerScrolled]);
+	}, []);
 
 	// Handles classNames for Header/Navbar
 	const headerClassNames = classNames('header', {
