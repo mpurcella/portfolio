@@ -17,6 +17,9 @@ const HeroText = () => {
 				duration: 0.6,
 				ease: 'linear'
 			}}
+			viewport={{
+				once: true
+			}}
 		>
 			{heroTextData.map((item) => {
 				return (

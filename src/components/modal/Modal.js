@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import FocusLock from 'react-focus-lock';
+import { motion } from 'framer-motion';
 import { FaTimes } from 'react-icons/fa';
 import ModalText from '../modal-text/ModalText';
 import ButtonLink from '../button-link/ButtonLink';
@@ -22,8 +23,31 @@ const Modal = ({ isModalOpen, isSuccessful, handleModal }) => {
 		return null;
 	} else if (isModalOpen && isSuccessful) {
 		return ReactDOM.createPortal(
-			<div className='modal-overlay'>
-				<div className='modal'>
+			<motion.div
+				className='modal-overlay'
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ duration: 0.2, ease: 'linear' }}
+			>
+				<motion.div
+					className='modal'
+					initial={{
+						opacity: 0,
+						scale: 0.5
+					}}
+					animate={{
+						opacity: 1,
+						scale: 1
+					}}
+					transition={{
+						duration: 0.2,
+						delay: 0.2,
+						ease: 'linear'
+					}}
+					viewport={{
+						once: true
+					}}
+				>
 					<FocusLock>
 						<button type='button' className='modal-close-button' onClick={handleModal} aria-label='Close'>
 							<FaTimes />
@@ -40,14 +64,37 @@ const Modal = ({ isModalOpen, isSuccessful, handleModal }) => {
 							I'll be in touch shortly.
 						</ModalText>
 					</FocusLock>
-				</div>
-			</div>,
+				</motion.div>
+			</motion.div>,
 			document.querySelector('#portal')
 		);
 	} else if (isModalOpen && !isSuccessful) {
 		return ReactDOM.createPortal(
-			<div className='modal-overlay'>
-				<div className='modal'>
+			<motion.div
+				className='modal-overlay'
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1 }}
+				transition={{ duration: 0.2, ease: 'linear' }}
+			>
+				<motion.div
+					className='modal'
+					initial={{
+						opacity: 0,
+						scale: 0.5
+					}}
+					animate={{
+						opacity: 1,
+						scale: 1
+					}}
+					transition={{
+						duration: 0.2,
+						delay: 0.2,
+						ease: 'linear'
+					}}
+					viewport={{
+						once: true
+					}}
+				>
 					<FocusLock>
 						<button type='button' className='modal-close-button' onClick={handleModal} aria-label='Close'>
 							<FaTimes />
@@ -73,8 +120,8 @@ const Modal = ({ isModalOpen, isSuccessful, handleModal }) => {
 							.
 						</ModalText>
 					</FocusLock>
-				</div>
-			</div>,
+				</motion.div>
+			</motion.div>,
 			document.querySelector('#portal')
 		);
 	}

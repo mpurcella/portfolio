@@ -16,6 +16,9 @@ const HeroHeading = () => {
 				duration: 0.6,
 				ease: 'linear'
 			}}
+			viewport={{
+				once: true
+			}}
 		>
 			<span className='hero-heading-top'>Mike</span>
 			<span className='hero-heading-bottom'>Purcella</span>
