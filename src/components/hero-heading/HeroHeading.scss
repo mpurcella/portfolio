@@ -1,73 +1,57 @@
 @import '../../design-tokens/scss-variables';
 
 .hero-heading {
+	font-family: 'Inter';
+	text-transform: uppercase;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: $spacer-5 * 2;
 
-	&-top,
-	&-bottom {
-		font-family: 'Montserrat';
-		font-weight: 900;
-		text-transform: uppercase;
-	}
-
 	&-top {
-		font-size: 6.8rem;
-		line-height: 0.85;
-		margin-bottom: -4px;
+		font-size: $font-size-7 * 4;
+		line-height: 0.8;
+		margin-bottom: -8px;
 
 		@media (min-width: 375px) {
-			font-size: 8.8rem;
-		}
-
-		@media (min-width: 480px) {
-			font-size: 11.2rem;
-			margin-top: $spacer-5;
+			font-size: $font-size-7 * 5.2;
 		}
 
 		@media (min-width: 576px) {
-			font-size: 12.4rem;
-			margin-top: $spacer-5;
+			font-size: $font-size-7 * 6.4;
 		}
 
 		@media (min-width: 768px) {
-			font-size: 14rem;
+			font-size: $font-size-7 * 8;
 		}
 
-		@media (min-width: 992px) {
-			font-size: 17.6rem;
+		@media (min-width: 1200px) {
+			font-size: $font-size-7 * 9;
 		}
 	}
 
 	&-bottom {
-		font-size: 3rem;
-		letter-spacing: 1.28px;
+		font-size: $font-size-7 * 1.8;
+		letter-spacing: 0.88px;
 
 		@media (min-width: 375px) {
-			font-size: 4rem;
-			letter-spacing: 0.84px;
-		}
-
-		@media (min-width: 480px) {
-			font-size: 5.2rem;
-			letter-spacing: 0.28px;
+			font-size: $font-size-7 * 2.4;
+			letter-spacing: 0.36px;
 		}
 
 		@media (min-width: 576px) {
-			font-size: 5.8rem;
-			letter-spacing: 0px;
+			font-size: $font-size-7 * 3;
+			letter-spacing: -0.22px;
 		}
 
 		@media (min-width: 768px) {
-			font-size: 6.4rem;
-			letter-spacing: 1.06px;
+			font-size: $font-size-7 * 3.7;
+			letter-spacing: 0.36px;
 		}
 
-		@media (min-width: 992px) {
-			font-size: 8.2rem;
-			letter-spacing: 0.36px;
+		@media (min-width: 1200px) {
+			font-size: $font-size-7 * 4.1;
+			letter-spacing: 1.32px;
 		}
 	}
 }
