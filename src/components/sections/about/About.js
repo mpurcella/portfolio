@@ -37,6 +37,21 @@ const About = ({ aboutRef }) => {
 		}
 	};
 
+	const aboutVariantLarge = {
+		offScreen: {
+			opacity: 1,
+			y: 0
+		},
+		onScreen: {
+			opacity: 1,
+			y: 0,
+			transition: {
+				duration: 0.4,
+				ease: 'linear'
+			}
+		}
+	};
+
 	return (
 		<section id='about' ref={aboutRef}>
 			<Wrapper>
@@ -69,9 +84,9 @@ const About = ({ aboutRef }) => {
 						whileInView='onScreen'
 						viewport={{
 							once: true,
-							amount: 0.2
+							amount: 0.1
 						}}
-						variants={width ? '' : aboutVariantSmall}
+						variants={width ? aboutVariantLarge : aboutVariantSmall}
 					>
 						<img src={aboutImage} className='about-image' alt='Michael Purcella Portrait' />
 					</motion.div>
