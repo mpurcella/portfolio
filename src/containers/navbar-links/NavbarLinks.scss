@@ -63,6 +63,9 @@
 
 		&:focus {
 			outline: none;
+		}
+
+		&:focus-visible {
 			border-radius: 4px;
 			box-shadow: 0 0 0 0.4rem rgba($color-white, 0.4);
 		}
@@ -98,6 +101,9 @@
 
 			&:focus {
 				outline: none;
+			}
+
+			&:focus-visible {
 				border-radius: 4px;
 				box-shadow: 0 0 0 0.4rem rgba($color-dark-black, 0.4);
 			}
