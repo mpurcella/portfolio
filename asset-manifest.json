@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.320eab40.css",
-    "main.js": "/static/js/main.c91f583c.js",
-    "static/media/white-texture.jpeg": "/static/media/white-texture.309a647ea971c2630ba8.jpeg",
+    "main.css": "/static/css/main.8619fee0.css",
+    "main.js": "/static/js/main.137b43b6.js",
     "static/media/portrait.jpeg": "/static/media/portrait.aadadb3a905b4a5976c5.jpeg",
     "static/media/jukebox-monkey-records.jpeg": "/static/media/jukebox-monkey-records.b47d00bc5d5e6d2d9b7c.jpeg",
     "static/media/heart-line.jpeg": "/static/media/heart-line.3768078e0593af534a65.jpeg",
@@ -25,11 +24,11 @@
     "static/media/ProximaNovaT-Thin.woff2": "/static/media/ProximaNovaT-Thin.ddd8689599e08cf876cd.woff2",
     "static/media/ProximaNova-Black.woff2": "/static/media/ProximaNova-Black.c64940f9a82d6427e149.woff2",
     "index.html": "/index.html",
-    "main.320eab40.css.map": "/static/css/main.320eab40.css.map",
-    "main.c91f583c.js.map": "/static/js/main.c91f583c.js.map"
+    "main.8619fee0.css.map": "/static/css/main.8619fee0.css.map",
+    "main.137b43b6.js.map": "/static/js/main.137b43b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.320eab40.css",
-    "static/js/main.c91f583c.js"
+    "static/css/main.8619fee0.css",
+    "static/js/main.137b43b6.js"
   ]
 }
