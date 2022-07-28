@@ -97,14 +97,8 @@
 					justify-content: center;
 
 					.project-technology-item {
-						margin: 0 $spacer-2;
-
-						&:first-child {
-							margin-left: 0;
-						}
-
-						&:last-child {
-							margin-right: 0%;
+						&:not(:last-child) {
+							margin-right: $spacer-4;
 						}
 					}
 
@@ -163,21 +157,14 @@
 		}
 
 		.button-link {
-			margin-bottom: $spacer-5;
-
-			&:last-child {
-				margin-bottom: 0;
+			&:not(:last-child) {
+				margin-bottom: $spacer-5;
 			}
 
 			@media (min-width: 375px) {
-				margin: 0 $spacer-2;
-
-				&:first-child {
-					margin-left: 0;
-				}
-
-				&:last-child {
-					margin-right: 0;
+				&:not(:last-child) {
+					margin-bottom: unset;
+					margin-right: $spacer-4;
 				}
 			}
 		}

@@ -1,29 +1,10 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { heroTextData } from './HeroTextData';
 import './HeroText.scss';
 
 const HeroText = () => {
 	return (
-		<motion.ul
-			className='hero-text-list'
-			initial={{
-				opacity: 0,
-				y: 20
-			}}
-			animate={{
-				opacity: 1,
-				y: 0
-			}}
-			transition={{
-				duration: 0.4,
-				delay: 0.5,
-				ease: 'linear'
-			}}
-			viewport={{
-				once: true
-			}}
-		>
+		<ul className='hero-text-list'>
 			{heroTextData.map((item) => {
 				return (
 					<li className='hero-text-item' key={item.textId}>
@@ -31,7 +12,7 @@ const HeroText = () => {
 					</li>
 				);
 			})}
-		</motion.ul>
+		</ul>
 	);
 };
 
