@@ -33,14 +33,14 @@ const Modal = ({ isModalOpen, isSuccessful, handleModal }) => {
 					className='modal'
 					initial={{
 						opacity: 0,
-						scale: 0.5
+						scale: 0.75
 					}}
 					animate={{
 						opacity: 1,
 						scale: 1
 					}}
 					transition={{
-						duration: 0.2,
+						duration: 0.1,
 						delay: 0.2,
 						ease: 'linear'
 					}}
@@ -80,14 +80,14 @@ const Modal = ({ isModalOpen, isSuccessful, handleModal }) => {
 					className='modal'
 					initial={{
 						opacity: 0,
-						scale: 0.5
+						scale: 0.75
 					}}
 					animate={{
 						opacity: 1,
 						scale: 1
 					}}
 					transition={{
-						duration: 0.2,
+						duration: 0.1,
 						delay: 0.2,
 						ease: 'linear'
 					}}
