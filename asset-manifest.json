@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.8619fee0.css",
-    "main.js": "/static/js/main.f8f80c9e.js",
+    "main.js": "/static/js/main.6c122f5e.js",
     "static/media/portrait.jpeg": "/static/media/portrait.aadadb3a905b4a5976c5.jpeg",
     "static/media/jukebox-monkey-records.jpeg": "/static/media/jukebox-monkey-records.b47d00bc5d5e6d2d9b7c.jpeg",
     "static/media/heart-line.jpeg": "/static/media/heart-line.3768078e0593af534a65.jpeg",
+    "static/media/michael_purcella_resume.pdf": "/static/media/michael_purcella_resume.33b213c4d141c822041f.pdf",
     "static/media/Inter-Black.woff2": "/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
     "static/media/Montserrat-Medium.woff2": "/static/media/Montserrat-Medium.413184b7e31531411178.woff2",
     "static/media/Montserrat-Light.woff2": "/static/media/Montserrat-Light.107b9ea1b8391cbb4449.woff2",
@@ -25,10 +26,10 @@
     "static/media/ProximaNova-Black.woff2": "/static/media/ProximaNova-Black.c64940f9a82d6427e149.woff2",
     "index.html": "/index.html",
     "main.8619fee0.css.map": "/static/css/main.8619fee0.css.map",
-    "main.f8f80c9e.js.map": "/static/js/main.f8f80c9e.js.map"
+    "main.6c122f5e.js.map": "/static/js/main.6c122f5e.js.map"
   },
   "entrypoints": [
     "static/css/main.8619fee0.css",
-    "static/js/main.f8f80c9e.js"
+    "static/js/main.6c122f5e.js"
   ]
 }
