@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.8619fee0.css",
+    "main.css": "/static/css/main.7ceec91a.css",
     "main.js": "/static/js/main.c0ff0959.js",
     "static/media/jukebox-monkey-records.jpeg": "/static/media/jukebox-monkey-records.b47d00bc5d5e6d2d9b7c.jpeg",
     "static/media/heart-line.jpeg": "/static/media/heart-line.3768078e0593af534a65.jpeg",
@@ -25,11 +25,11 @@
     "static/media/ProximaNovaT-Thin.woff2": "/static/media/ProximaNovaT-Thin.ddd8689599e08cf876cd.woff2",
     "static/media/ProximaNova-Black.woff2": "/static/media/ProximaNova-Black.c64940f9a82d6427e149.woff2",
     "index.html": "/index.html",
-    "main.8619fee0.css.map": "/static/css/main.8619fee0.css.map",
+    "main.7ceec91a.css.map": "/static/css/main.7ceec91a.css.map",
     "main.c0ff0959.js.map": "/static/js/main.c0ff0959.js.map"
   },
   "entrypoints": [
-    "static/css/main.8619fee0.css",
+    "static/css/main.7ceec91a.css",
     "static/js/main.c0ff0959.js"
   ]
 }
