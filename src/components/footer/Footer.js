@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<footer className='footer'>
 			<a
-				href='https://github.com/mpurcella/portfoliov2'
+				href='https://github.com/mpurcella/portfoliov3'
 				className='footer-link'
 				target='_blank'
 				rel='noopener noreferrer'
