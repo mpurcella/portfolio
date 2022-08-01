@@ -5,6 +5,7 @@ import SectionHeading from '../../section-heading/SectionHeading';
 import SectionText from '../../section-text/SectionText';
 import aboutImage from '../../../images/portrait/portrait.jpeg';
 import ButtonLink from '../../button-link/ButtonLink';
+import resume from '../../../resume/michael_purcella_resume.pdf';
 import './About.scss';
 
 const About = ({ aboutRef }) => {
@@ -112,7 +113,7 @@ const About = ({ aboutRef }) => {
 				>
 					<ButtonLink
 						buttonLinkClassName='button-link primary'
-						buttonLinkPath='https://drive.google.com/file/d/10O1kEKVBSqo9Zf2bJFh9jM96nc27u8Kn/view?usp=sharing'
+						buttonLinkPath={resume}
 						buttonLinkName='View My Resume'
 					/>
 					<ButtonLink
