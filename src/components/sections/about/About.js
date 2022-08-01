@@ -112,7 +112,7 @@ const About = ({ aboutRef }) => {
 				>
 					<ButtonLink
 						buttonLinkClassName='button-link primary'
-						buttonLinkPath='https://drive.google.com/file/d/1ENX8LcyLt7QkzG2x5HU_BemK1vdwG25D/view?usp=sharing'
+						buttonLinkPath='https://drive.google.com/file/d/10O1kEKVBSqo9Zf2bJFh9jM96nc27u8Kn/view?usp=sharing'
 						buttonLinkName='View My Resume'
 					/>
 					<ButtonLink
