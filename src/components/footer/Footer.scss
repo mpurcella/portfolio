@@ -12,11 +12,11 @@
 		font-size: $font-size-4;
 		color: $color-white;
 		font-weight: 500;
-		text-decoration: none;
 		text-align: center;
 		line-height: 1.25;
 		margin-bottom: calc($spacer-5 * 2);
 		padding: $spacer-1;
+		text-underline-offset: $spacer-1;
 		transition: color 0.3s ease;
 
 		&:hover {

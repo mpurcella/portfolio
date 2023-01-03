@@ -3,6 +3,8 @@ import SocialLinks from '../social-links/SocialLinks';
 import './Footer.scss';
 
 const Footer = () => {
+	const date = new Date();
+
 	return (
 		<footer className='footer'>
 			<a
@@ -14,7 +16,7 @@ const Footer = () => {
 				Designed &amp; built by Mike&nbsp;Purcella
 			</a>
 			<SocialLinks socialLinksClassName='social-links-list footer-social' />
-			<p className='footer-copyright'>&#169; 2022 Mike Purcella. All Rights Reserved.</p>
+			<p className='footer-copyright'>&#169; {date.getFullYear()} Mike Purcella. All Rights Reserved.</p>
 		</footer>
 	);
 };
