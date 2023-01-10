@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { motion } from 'framer-motion';
 import ButtonSubmit from '../../components/button-submit/ButtonSubmit';
 import Modal from '../../components/modal/Modal';
 import './ContactForm.scss';
@@ -70,26 +69,7 @@ const ContactForm = () => {
 
 	return (
 		<>
-			<motion.form
-				className='contact-form'
-				onSubmit={handleSubmit(onSubmit)}
-				initial={{
-					opacity: 0,
-					y: 30
-				}}
-				whileInView={{
-					opacity: 1,
-					y: 0
-				}}
-				transition={{
-					duration: 0.4,
-					ease: 'linear'
-				}}
-				viewport={{
-					once: true,
-					amount: 0.2
-				}}
-			>
+			<form className='contact-form' onSubmit={handleSubmit(onSubmit)}>
 				<input type='hidden' value='a17d3cc8-b9d7-4c89-a622-aec5c8c5171e' {...register('access_key')} />
 				<div className='name'>
 					<div className='first-name'>
@@ -153,31 +133,13 @@ const ContactForm = () => {
 					></textarea>
 					{errors.messageText && <p className='form-input-error'>{errors.messageText.message}</p>}
 				</div>
-				<motion.div
-					className='submit-button-container'
-					initial={{
-						opacity: 0,
-						y: 30
-					}}
-					whileInView={{
-						opacity: 1,
-						y: 0
-					}}
-					transition={{
-						duration: 0.4,
-						ease: 'linear'
-					}}
-					viewport={{
-						once: true,
-						amount: 0.2
-					}}
-				>
+				<div className='submit-button-container'>
 					<ButtonSubmit
 						buttonSubmitClassName={isSubmitting ? 'button-submit disabled' : 'button-submit'}
 						isSubmitting={isSubmitting}
 					/>
-				</motion.div>
-			</motion.form>
+				</div>
+			</form>
 			<Modal isModalOpen={isModalOpen} handleModal={handleModal} isSuccessful={isSuccessful} />
 		</>
 	);
