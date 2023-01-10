@@ -1,0 +1,12 @@
+@import '../../design-tokens/scss-variables';
+
+.project-text {
+	font-size: $font-size-4;
+	color: $color-dark-black;
+	text-align: center;
+	line-height: 1.5;
+
+	@media (min-width: 768px) {
+		font-size: $font-size-5;
+	}
+}

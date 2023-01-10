@@ -15,7 +15,7 @@ const Technologies = ({ technologiesRef }) => {
 				/>
 				<SectionText sectionTextClassName='section-text technologies-text'>
 					My technology stack will surely change and take on a different shape as I grow as a developer, but
-					below are some technologies that I currently utilize to make my ideas come&nbsp;to&nbsp;life.
+					below are some that I currently utilize to make my ideas and work come&nbsp;to&nbsp;life.
 				</SectionText>
 				<TechnologyLogos />
 			</Wrapper>

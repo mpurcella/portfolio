@@ -40,13 +40,11 @@
 			height: 50vh;
 			display: block;
 			object-fit: cover;
-			border-top: 0.5px solid $color-light-grey;
-			border-bottom: 0.5px solid $color-light-grey;
 			box-sizing: border-box;
 
 			@media (min-width: 576px) {
 				height: unset;
-				box-shadow: 0px 4px 12px rgba($color-dark-black, 0.3);
+				box-shadow: 0px 4px 14px 1px rgba($color-dark-black, 0.4);
 				border-radius: 12px;
 			}
 
@@ -75,71 +73,28 @@
 
 			.project-description {
 				background-color: rgba($color-light-grey, 0.8);
+				display: flex;
+				flex-direction: column;
+				gap: $spacer-6;
 				padding: $spacer-5;
 				border-radius: 12px;
-				box-shadow: 0px 4px 12px rgba($color-dark-black, 0.2);
+				box-shadow: 0px 4px 14px 1px rgba($color-dark-black, 0.2);
 				backdrop-filter: saturate(180%) blur(10px);
-
-				.project-text {
-					font-size: $font-size-4;
-					color: $color-dark-black;
-					text-align: center;
-					line-height: 1.5;
-					margin-bottom: $spacer-7;
-
-					@media (min-width: 768px) {
-						font-size: $font-size-5;
-					}
-				}
 
 				.project-technology-list {
 					display: flex;
 					justify-content: center;
-
-					.project-technology-item {
-						&:not(:last-child) {
-							margin-right: $spacer-4;
-						}
-					}
+					gap: $spacer-4;
 
 					.project-technology-logo {
 						font-size: $icon-size-1 * 2;
+						color: $color-dark-black;
 						display: flex;
-						opacity: 0.8;
+						opacity: 0.9;
 
 						@media (min-width: 768px) {
 							font-size: $icon-size-2 * 2;
 						}
-					}
-
-					.react-logo {
-						color: #61dafb;
-						filter: drop-shadow(1px 1px 1px rgba(#61dafb, 0.3));
-					}
-
-					.sass-logo {
-						color: #cd669a;
-						filter: drop-shadow(1px 1px 1px rgba(#cd669a, 0.3));
-					}
-
-					.html-logo {
-						color: #e34c26;
-						filter: drop-shadow(1px 1px 1px rgba(#e34c26, 0.3));
-					}
-
-					.bootstrap-logo {
-						color: #7953b2;
-						filter: drop-shadow(1px 1px 1px rgba(#7953b2, 0.3));
-					}
-
-					.javascript-logo {
-						color: #fcdc00;
-						filter: drop-shadow(1px 1px 1px rgba(#fcdc00, 0.3));
-					}
-
-					.jquery-logo {
-						color: #0769ad;
-						filter: drop-shadow(1px 1px 1px rgba(#0769ad, 0.3));
 					}
 				}
 			}
@@ -150,23 +105,11 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		gap: $spacer-5;
 
 		@media (min-width: 375px) {
 			flex-direction: unset;
 			align-items: unset;
-		}
-
-		.button-link {
-			&:not(:last-child) {
-				margin-bottom: $spacer-5;
-			}
-
-			@media (min-width: 375px) {
-				&:not(:last-child) {
-					margin-bottom: unset;
-					margin-right: $spacer-4;
-				}
-			}
 		}
 	}
 }

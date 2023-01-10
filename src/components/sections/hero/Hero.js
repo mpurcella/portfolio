@@ -1,17 +1,26 @@
 import React from 'react';
 import Wrapper from '../../wrapper/Wrapper';
-import HeroHeading from '../../hero-heading/HeroHeading';
-// import HeroSubheading from '../../hero-subheading/HeroSubheading';
-import HeroText from '../../hero-text/HeroText';
+import { heroData } from './HeroData';
 import './Hero.scss';
 
 const Hero = ({ heroRef }) => {
 	return (
 		<section id='hero' ref={heroRef}>
+			<div className='hero-background'></div>
 			<Wrapper>
-				<HeroHeading />
-				{/* <HeroSubheading /> */}
-				<HeroText />
+				<h1 className='hero-heading'>
+					<span className='hero-heading-top'>Mike</span>
+					<span className='hero-heading-bottom'>Purcella</span>
+				</h1>
+				<ul className='hero-text-list'>
+					{heroData.map((item) => {
+						return (
+							<li className='hero-text-item' key={item.textId}>
+								{item.textValue}
+							</li>
+						);
+					})}
+				</ul>
 			</Wrapper>
 		</section>
 	);

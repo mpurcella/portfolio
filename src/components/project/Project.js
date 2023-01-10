@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import ButtonLink from '../button-link/ButtonLink';
 import './Project.scss';
+import ProjectText from '../project-text/ProjectText';
 
 const Project = ({ item }) => {
 	return (
@@ -29,12 +30,8 @@ const Project = ({ item }) => {
 				<img src={item.projectImage} className='project-image' alt={item.projectAlt} />
 				<div className='project-info'>
 					<div className='project-description'>
-						<p className='project-text'>
-							{item.projectDescription}
-							<br />
-							<br />
-							{item.projectInspiration}
-						</p>
+						<ProjectText>{item.projectDescription}</ProjectText>
+						<ProjectText>{item.projectInspiration}</ProjectText>
 						<ul className='project-technology-list'>
 							{item.projectTechnologies.map((item) => {
 								return (

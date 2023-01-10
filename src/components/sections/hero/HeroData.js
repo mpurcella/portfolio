@@ -1,4 +1,4 @@
-const heroTextData = [
+const heroData = [
 	{
 		textValue: 'Web Developer',
 		textId: 1
@@ -13,4 +13,4 @@ const heroTextData = [
 	}
 ];
 
-export { heroTextData };
+export { heroData };

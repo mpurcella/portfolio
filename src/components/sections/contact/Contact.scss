@@ -1,6 +1,13 @@
 @import '../../../design-tokens/scss-variables';
 
 #contact {
-	background-color: $color-dark-black;
+	background-color: $color-light-black;
 	padding: $spacer-5 * 4 0;
+
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		gap: $spacer-7;
+		margin-bottom: $spacer-7 * 2;
+	}
 }

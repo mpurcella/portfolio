@@ -9,11 +9,11 @@ import './Navbar.scss';
 
 const Navbar = ({ heroRef, aboutRef, technologiesRef, workRef, contactRef }) => {
 	// Sets state of true/false for window width
-	const [width, setWidth] = useState(window.innerWidth > 767);
+	const [width, setWidth] = useState(window.innerWidth > 1023);
 
 	useEffect(() => {
 		const handleWidth = () => {
-			setWidth(window.innerWidth > 767);
+			setWidth(window.innerWidth > 1023);
 		};
 
 		window.addEventListener('resize', handleWidth);
@@ -36,7 +36,7 @@ const Navbar = ({ heroRef, aboutRef, technologiesRef, workRef, contactRef }) => 
 
 	useEffect(() => {
 		const closeNavbarMenuOnResize = () => {
-			if (window.innerWidth > 767) {
+			if (window.innerWidth > 1023) {
 				setNavbarMenu(false);
 			}
 		};
@@ -53,7 +53,7 @@ const Navbar = ({ heroRef, aboutRef, technologiesRef, workRef, contactRef }) => 
 
 	useEffect(() => {
 		const handleHeaderScrolled = () => {
-			if (window.scrollY > 60) {
+			if (window.scrollY > 80) {
 				setHeaderScroll(true);
 			} else {
 				setHeaderScroll(false);

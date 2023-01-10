@@ -2,7 +2,7 @@
 
 .section-text {
 	text-align: center;
-	line-height: 1.5;
+	line-height: 1.75;
 
 	@media (min-width: 768px) {
 		font-size: $font-size-6;
@@ -15,25 +15,7 @@
 	color: $color-dark-black;
 }
 
-.about-text,
-.work-text,
-.contact-text {
-	&:not(:last-child) {
-		margin-bottom: $spacer-7;
-	}
-
-	&:last-child {
-		margin-bottom: $spacer-7 * 2;
-	}
-}
-
 .about-text {
-	&:last-child {
-		@media (min-width: 992px) {
-			margin-bottom: 0;
-		}
-	}
-
 	@media (min-width: 992px) {
 		text-align: unset;
 	}

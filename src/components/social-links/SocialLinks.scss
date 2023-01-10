@@ -2,18 +2,13 @@
 
 .social-links-list {
 	display: flex;
-
-	.social-links-item {
-		&:not(:last-child) {
-			margin-right: $spacer-6;
-		}
-	}
+	gap: $spacer-6;
 
 	.social-links-link {
-		color: $color-dark-grey;
+		color: $color-medium-grey;
 		display: flex;
 		padding: $spacer-1;
-		transition: color 0.3s ease;
+		transition: all 0.3s ease;
 
 		&:hover {
 			color: $color-white;
@@ -24,8 +19,8 @@
 		}
 
 		&:focus-visible {
-			border-radius: 4px;
-			box-shadow: 0 0 0 0.4rem rgba($color-white, 0.4);
+			color: $color-white;
+			box-shadow: 0 0 0 0.2rem $color-green;
 		}
 	}
 }

@@ -3,21 +3,22 @@
 .button-submit {
 	font-family: 'Proxima Nova';
 	font-size: $font-size-5;
-	font-weight: 400;
+	font-weight: 500;
 	color: $color-white;
 	text-transform: uppercase;
-	background-color: $color-pink;
+	background-color: $color-dark-black;
 	display: flex;
 	align-items: center;
 	padding: $spacer-4 $spacer-8;
-	border: 1px solid $color-pink;
-	border-radius: 8px;
+	border: 1px solid $color-white;
 	cursor: pointer;
 	transition: all 0.3s ease;
 
-	&:hover {
-		background-color: darken($color-pink, 8%);
-		border-color: darken($color-pink, 8%);
+	&:hover,
+	&:focus-visible {
+		color: $color-dark-black;
+		background-color: $color-green;
+		border-color: $color-green;
 	}
 
 	&:focus {
@@ -25,8 +26,7 @@
 	}
 
 	&:focus-visible {
-		border-radius: 4px;
-		box-shadow: 0 0 0 0.4rem rgba($color-pink, 0.4);
+		box-shadow: 0 0 0 0.4rem $color-white;
 	}
 
 	&:disabled {
@@ -39,7 +39,7 @@
 		margin-right: $spacer-4;
 		display: inline-block;
 		border-radius: 50%;
-		border-top: 3px solid $color-white;
+		border-top: 3px solid $color-dark-black;
 		border-right: 3px solid transparent;
 		box-sizing: border-box;
 		animation: spinner 1s linear infinite;

@@ -1,4 +1,15 @@
-import { SiHtml5, SiCss3, SiSass, SiBootstrap, SiJavascript, SiJquery, SiGithub, SiReact } from 'react-icons/si';
+import {
+	SiHtml5,
+	SiCss3,
+	SiSass,
+	SiBootstrap,
+	SiJavascript,
+	SiJquery,
+	SiGithub,
+	SiReact,
+	SiTailwindcss,
+	SiTypescript
+} from 'react-icons/si';
 
 const technologyLogosData = [
 	{
@@ -20,34 +31,46 @@ const technologyLogosData = [
 		technologyId: 3
 	},
 	{
+		technologyName: 'Tailwind',
+		technologyLogo: <SiTailwindcss />,
+		technologyLogoClassName: 'tailwind-logo',
+		technologyId: 4
+	},
+	{
 		technologyName: 'Bootstrap',
 		technologyLogo: <SiBootstrap />,
 		technologyLogoClassName: 'bootstrap-logo',
-		technologyId: 4
+		technologyId: 5
 	},
 	{
 		technologyName: 'JavaScript',
 		technologyLogo: <SiJavascript />,
 		technologyLogoClassName: 'javascript-logo',
-		technologyId: 5
+		technologyId: 6
+	},
+	{
+		technologyName: 'TypeScript',
+		technologyLogo: <SiTypescript />,
+		technologyLogoClassName: 'typescript-logo',
+		technologyId: 7
 	},
 	{
 		technologyName: 'jQuery',
 		technologyLogo: <SiJquery />,
 		technologyLogoClassName: 'jquery-logo',
-		technologyId: 6
+		technologyId: 8
 	},
 	{
 		technologyName: 'Github',
 		technologyLogo: <SiGithub />,
 		technologyLogoClassName: 'github-logo',
-		technologyId: 7
+		technologyId: 9
 	},
 	{
 		technologyName: 'React',
 		technologyLogo: <SiReact />,
 		technologyLogoClassName: 'react-logo',
-		technologyId: 8
+		technologyId: 10
 	}
 ];
 
