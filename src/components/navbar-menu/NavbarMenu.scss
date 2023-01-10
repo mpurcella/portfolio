@@ -1,7 +1,7 @@
 @import '../../design-tokens/scss-variables';
 
 .navbar-menu {
-	width: 100vw;
+	width: 80vw;
 	height: 100vh;
 	background-color: $color-light-black;
 	display: flex;
@@ -12,26 +12,16 @@
 	box-sizing: border-box;
 	position: fixed;
 	top: 0;
-	right: -100vw;
-	transition: right 0.2s ease;
+	right: -80vw;
+	transition: all 0.2s ease;
 
 	&.open {
 		right: 0;
+		box-shadow: 0px 4px 14px 1px rgba($color-dark-black, 0.6);
 	}
 
 	// Mobile Landscape
 	@media (max-width: 768px) and (max-height: 540px) {
-		width: 100vw;
-	}
-
-	// Mobile Portrait
-	@media (max-width: 540px) and (min-height: 540px) {
-		width: 80vw;
-		box-shadow: 0px 0px 6px 2px rgba($color-dark-black, 0.4);
-	}
-
-	// Mobile Portrait (Galaxy Fold)
-	@media (max-width: 280px) and (min-height: 540px) {
 		width: 100vw;
 	}
 }

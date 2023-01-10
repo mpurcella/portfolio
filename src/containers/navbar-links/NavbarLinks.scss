@@ -2,110 +2,69 @@
 @import '../../design-tokens/scss-variables';
 
 .navbar-links-list {
+	display: flex;
+	flex-direction: column;
+	gap: $spacer-6;
 	margin-bottom: $spacer-6 * 4;
 
 	// Mobile Landscape
 	@media (max-width: 768px) and (max-height: 480px) {
-		display: flex;
 		margin: $spacer-5 0 $spacer-5 * 2;
 	}
 
-	@media (min-width: 768px) {
-		display: flex;
+	@media (min-width: 1024px) {
+		flex-direction: row;
+		gap: $spacer-9;
 		margin-bottom: unset;
 	}
 
 	.navbar-links-item {
 		display: flex;
 		justify-content: center;
-
-		&:not(:last-child) {
-			margin-bottom: $spacer-6;
-		}
-
-		// Mobile Landscape
-		@media (max-width: 768px) and (max-height: 480px) {
-			&:not(:last-child) {
-				margin-bottom: unset;
-				margin-right: $spacer-8;
-			}
-		}
-
-		@media (min-width: 768px) {
-			&:not(:last-child) {
-				margin-bottom: unset;
-				margin-right: $spacer-5;
-			}
-		}
 	}
 
 	.navbar-links-link {
 		font-family: 'Montserrat';
 		font-size: $font-size-7;
 		color: $color-white;
-		font-weight: 500;
+		font-weight: 600;
 		text-transform: uppercase;
-		text-decoration: none;
-		padding: $spacer-1;
-		transition: color 0.3s ease;
+		text-decoration: underline;
+		text-decoration-color: transparent;
+		text-underline-offset: $spacer-1;
+		transition: color 0.3s ease, text-decoration-color 0.3s ease;
 
 		&.active {
-			font-weight: 900;
+			text-decoration-color: $color-green;
 
-			&:hover {
-				color: $color-white;
+			&:focus-visible {
+				box-shadow: none;
 			}
 		}
 
-		&:hover {
-			color: $color-dark-grey;
+		&:hover,
+		&:focus-visible {
+			text-decoration-color: $color-green;
 		}
 
 		&:focus {
 			outline: none;
 		}
 
-		&:focus-visible {
-			border-radius: 4px;
-			box-shadow: 0 0 0 0.4rem rgba($color-white, 0.4);
-		}
-
-		@media (min-width: 768px) {
+		@media (min-width: 1024px) {
 			font-size: $font-size-4;
-			font-weight: 500;
-			color: $color-dark-black;
+			font-weight: 600;
+			text-decoration-thickness: 1.5px;
 			position: relative;
 
-			&::after {
-				height: 0;
-				content: attr(title);
-				font-weight: 600;
-				display: block;
-				margin-top: -1px;
-				overflow: hidden;
-				visibility: hidden;
-			}
-
 			&.active {
-				font-weight: 600;
-
 				&:hover {
-					color: $color-dark-black;
+					color: $color-light-grey;
 				}
 			}
 
 			&:hover {
-				color: $color-dark-black;
-				font-weight: 600;
-			}
-
-			&:focus {
-				outline: none;
-			}
-
-			&:focus-visible {
-				border-radius: 4px;
-				box-shadow: 0 0 0 0.4rem rgba($color-dark-black, 0.4);
+				color: $color-light-grey;
 			}
 		}
 	}

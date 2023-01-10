@@ -13,7 +13,7 @@ const Contact = ({ contactRef }) => {
 					sectionHeadingClassName='section-heading contact-heading'
 					sectionHeadingName='Contact'
 				/>
-				<div className='work-info'>
+				<div className='contact-info'>
 					<SectionText sectionTextClassName='section-text contact-text'>
 						Want to connect, collaborate, hire me, or learn more about what makes me...me?
 					</SectionText>
