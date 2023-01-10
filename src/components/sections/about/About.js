@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import React from 'react';
 import Wrapper from '../../wrapper/Wrapper';
 import SectionHeading from '../../section-heading/SectionHeading';
 import SectionText from '../../section-text/SectionText';
@@ -9,50 +8,6 @@ import resume from '../../../resume/michael_purcella_resume.pdf';
 import './About.scss';
 
 const About = ({ aboutRef }) => {
-	const [width, setWidth] = useState(window.innerWidth > 991);
-
-	useEffect(() => {
-		const handleWidth = () => {
-			setWidth(window.innerWidth > 991);
-		};
-
-		window.addEventListener('resize', handleWidth);
-
-		return () => {
-			window.removeEventListener('resize', handleWidth);
-		};
-	}, []);
-
-	const aboutVariantSmall = {
-		offScreen: {
-			opacity: 0,
-			y: 30
-		},
-		onScreen: {
-			opacity: 1,
-			y: 0,
-			transition: {
-				duration: 0.4,
-				ease: 'linear'
-			}
-		}
-	};
-
-	const aboutVariantLarge = {
-		offScreen: {
-			opacity: 1,
-			y: 0
-		},
-		onScreen: {
-			opacity: 1,
-			y: 0,
-			transition: {
-				duration: 0.4,
-				ease: 'linear'
-			}
-		}
-	};
-
 	return (
 		<section id='about' ref={aboutRef}>
 			<Wrapper>
@@ -79,38 +34,11 @@ const About = ({ aboutRef }) => {
 							links&nbsp;below!
 						</SectionText>
 					</div>
-					<motion.div
-						className='about-image-container'
-						initial='offScreen'
-						whileInView='onScreen'
-						viewport={{
-							once: true,
-							amount: 0.1
-						}}
-						variants={width ? aboutVariantLarge : aboutVariantSmall}
-					>
+					<div className='about-image-container'>
 						<img src={aboutImage} className='about-image' alt='Michael Purcella Portrait' />
-					</motion.div>
+					</div>
 				</div>
-				<motion.div
-					className='about-buttons-container'
-					initial={{
-						opacity: 0,
-						y: 30
-					}}
-					whileInView={{
-						opacity: 1,
-						y: 0
-					}}
-					transition={{
-						duration: 0.4,
-						ease: 'linear'
-					}}
-					viewport={{
-						once: true,
-						amount: 0.2
-					}}
-				>
+				<div className='about-buttons-container'>
 					<ButtonLink
 						buttonLinkClassName='button-link primary'
 						buttonLinkPath={resume}
@@ -121,7 +49,7 @@ const About = ({ aboutRef }) => {
 						buttonLinkPath='https://github.com/mpurcella'
 						buttonLinkName='View My Github'
 					/>
-				</motion.div>
+				</div>
 			</Wrapper>
 		</section>
 	);
