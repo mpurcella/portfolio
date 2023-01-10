@@ -141,7 +141,6 @@ const NavbarLinks = ({ closeNavbarMenu, aboutRef, technologiesRef, workRef, cont
 			<li className='navbar-links-item'>
 				<Link
 					to={navbarLinksData[0].linkPath}
-					title={navbarLinksData[0].linkName}
 					className={aboutActive ? 'navbar-links-link active' : 'navbar-links-link'}
 					onClick={(e) => {
 						e.preventDefault();
@@ -156,7 +155,6 @@ const NavbarLinks = ({ closeNavbarMenu, aboutRef, technologiesRef, workRef, cont
 			<li className='navbar-links-item'>
 				<Link
 					to={navbarLinksData[1].linkPath}
-					title={navbarLinksData[1].linkName}
 					className={technologiesActive ? 'navbar-links-link active' : 'navbar-links-link'}
 					onClick={(e) => {
 						e.preventDefault();
@@ -171,7 +169,6 @@ const NavbarLinks = ({ closeNavbarMenu, aboutRef, technologiesRef, workRef, cont
 			<li className='navbar-links-item'>
 				<Link
 					to={navbarLinksData[2].linkPath}
-					title={navbarLinksData[2].linkName}
 					className={workActive ? 'navbar-links-link active' : 'navbar-links-link'}
 					onClick={(e) => {
 						e.preventDefault();
@@ -186,7 +183,6 @@ const NavbarLinks = ({ closeNavbarMenu, aboutRef, technologiesRef, workRef, cont
 			<li className='navbar-links-item'>
 				<Link
 					to={navbarLinksData[3].linkPath}
-					title={navbarLinksData[3].linkName}
 					className={contactActive ? 'navbar-links-link active' : 'navbar-links-link'}
 					onClick={(e) => {
 						e.preventDefault();
