@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './containers/navbar/Navbar';
-import Home from './components/pages/Home';
+import Home from './pages/Home';
 import Footer from './components/footer/Footer';
 
 const App = () => {
