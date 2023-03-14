@@ -1,6 +1,7 @@
 import HeartLine from '../../images/projects/heart-line.jpeg';
 import JukeboxMonkeyRecords from '../../images/projects/jukebox-monkey-records.jpeg';
 import ThePopcornPlace from '../../images/projects/the-popcorn-place.jpeg';
+import McuGuide from '../../images/projects/mcu-guide.jpeg';
 import {
 	SiHtml5,
 	SiSass,
@@ -13,6 +14,35 @@ import {
 } from 'react-icons/si';
 
 const projectData = [
+	{
+		projectName: 'MCU Guide',
+		projectImage: McuGuide,
+		projectAlt: 'MCU Guide Website Home Page',
+		projectDescription:
+			'This project was created to explore making API calls, manipulating the returned API data, implementing dynamic routing, and utilizing TypeScript to set data types.',
+		projectInspiration:
+			'Expanding upon a previous project, The Popcorn Place, this website builds off of the use of REST APIs, type setting, and styling via Tailwind CSS. Combining my interests in the MCU and web development, I continue progressing as a front-end web developer.',
+		projectTechnologies: [
+			{
+				projectTechnologyLogo: <SiReact />,
+				projectTechnologyClassName: 'react-logo',
+				projectTechnologyId: 1
+			},
+			{
+				projectTechnologyLogo: <SiTypescript />,
+				projectTechnologyClassName: 'typescript-logo',
+				projectTechnologyId: 2
+			},
+			{
+				projectTechnologyLogo: <SiTailwindcss />,
+				projectTechnologyClassName: 'tailwind-logo',
+				projectTechnologyId: 3
+			}
+		],
+		projectPathSite: 'https://mcu-guide.netlify.app',
+		projectPathGithub: 'https://github.com/mpurcella/mcu-guide',
+		projectId: 1
+	},
 	{
 		projectName: 'The Popcorn Place',
 		projectImage: ThePopcornPlace,
@@ -40,7 +70,7 @@ const projectData = [
 		],
 		projectPathSite: 'https://the-popcorn-place.netlify.app/',
 		projectPathGithub: 'https://github.com/mpurcella/apprenticeship-movies-app',
-		projectId: 1
+		projectId: 2
 	},
 	{
 		projectName: 'Heart Line',
@@ -64,7 +94,7 @@ const projectData = [
 		],
 		projectPathSite: 'https://mpurcella.github.io/artist-page-v2-react/',
 		projectPathGithub: 'https://github.com/mpurcella/artist-page-v2-react',
-		projectId: 2
+		projectId: 3
 	},
 	{
 		projectName: 'Jukebox Monkey Records',
@@ -103,7 +133,7 @@ const projectData = [
 		],
 		projectPathSite: 'https://mpurcella.github.io/jukebox-monkey-records/',
 		projectPathGithub: 'https://github.com/mpurcella/jukebox-monkey-records',
-		projectId: 3
+		projectId: 4
 	}
 ];
 
