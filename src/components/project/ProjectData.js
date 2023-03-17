@@ -19,9 +19,9 @@ const projectData = [
 		projectImage: McuGuide,
 		projectAlt: 'MCU Guide Website Home Page',
 		projectDescription:
-			'This project was created to explore making API calls, manipulating the returned API data, implementing dynamic routing, and utilizing TypeScript to set data types.',
+			'This project was created to explore making API calls, manipulating API data, implementing dynamic routing, and utilizing TypeScript to set data types.',
 		projectInspiration:
-			'Expanding upon a previous project, The Popcorn Place, this website builds off of the use of REST APIs, type setting, and styling via Tailwind CSS. Combining my interests in the MCU and web development, I continue progressing as a front-end web developer.',
+			'Expanding upon a previous project, The Popcorn Place, this website builds off of the use of REST APIs, type setting, and styling via Tailwind CSS – combining my interests in the MCU and web development to continue progressing as a front-end web developer.',
 		projectTechnologies: [
 			{
 				projectTechnologyLogo: <SiReact />,
